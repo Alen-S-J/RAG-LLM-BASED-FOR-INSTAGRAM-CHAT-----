@@ -1,0 +1,32 @@
+{
+  "profile_profile_change": [
+    {
+      "title": "Profile change",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Changed": {
+          "href": "",
+          "value": "Email",
+          "timestamp": 0
+        },
+        "Previous value": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "New value": {
+          "href": "",
+          "value": "connect@luvdays.com",
+          "timestamp": 0
+        },
+        "Change date": {
+          "href": "",
+          "value": "",
+          "timestamp": 1752239348
+        }
+      }
+    }
+  ]
+}

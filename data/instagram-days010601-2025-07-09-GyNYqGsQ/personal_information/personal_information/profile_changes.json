@@ -1,0 +1,60 @@
+{
+  "profile_profile_change": [
+    {
+      "title": "Profile Change",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Changed": {
+          "href": "",
+          "value": "Email",
+          "timestamp": 0
+        },
+        "Previous Value": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "New Value": {
+          "href": "",
+          "value": "connect@luvdays.com",
+          "timestamp": 0
+        },
+        "Change Date": {
+          "href": "",
+          "value": "",
+          "timestamp": 1751881177
+        }
+      }
+    },
+    {
+      "title": "Profile Change",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Changed": {
+          "href": "",
+          "value": "Profile Bio Text",
+          "timestamp": 0
+        },
+        "Previous Value": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "New Value": {
+          "href": "",
+          "value": "Destinations through the lens of Bloomberg and Expedia",
+          "timestamp": 0
+        },
+        "Change Date": {
+          "href": "",
+          "value": "",
+          "timestamp": 1751893363
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+Faiss-cpu
+langchain
+langchain-core
+langchain-community
+langchain-openai
+langchain-text-splitters
+crewai
+BeautifulSoup4
+requests    
+python-dotenv
+tqdm
+pip
+fastapi
+uvicorn

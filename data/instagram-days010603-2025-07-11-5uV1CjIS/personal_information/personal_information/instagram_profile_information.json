@@ -1,0 +1,47 @@
+{
+  "profile_account_insights": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Contact syncing": {
+          "href": "",
+          "value": "False",
+          "timestamp": 0
+        },
+        "Has shared live video": {
+          "href": "",
+          "value": "False",
+          "timestamp": 0
+        },
+        "Last login": {
+          "href": "",
+          "value": "",
+          "timestamp": 1752239359
+        },
+        "Last logout": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "First story time": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "Last story time": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "First Close Friends story time": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

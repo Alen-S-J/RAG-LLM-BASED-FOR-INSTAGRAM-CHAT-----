@@ -1,0 +1,42 @@
+{
+  "account_history_registration_info": [
+    {
+      "title": "",
+      "media_map_data": {
+        
+      },
+      "string_map_data": {
+        "Username": {
+          "href": "",
+          "value": "Days Tour",
+          "timestamp": 0
+        },
+        "IP address": {
+          "href": "",
+          "value": "2401:4900:8fdc:5469:502b:87d7:4350:a19b",
+          "timestamp": 0
+        },
+        "Time": {
+          "href": "",
+          "value": "",
+          "timestamp": 1752217217
+        },
+        "Email address": {
+          "href": "",
+          "value": "connect@luvdays.com",
+          "timestamp": 0
+        },
+        "Phone number": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        },
+        "Device": {
+          "href": "",
+          "value": "",
+          "timestamp": 0
+        }
+      }
+    }
+  ]
+}

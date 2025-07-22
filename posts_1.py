@@ -24,8 +24,8 @@ def extract_posts(json_path: str) -> List[dict]:
 
 if __name__ == "__main__":
     json_paths = [
-        r"path1-data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\media\posts_1.json",
-        r"path2-data\instagram-days010602-2025-07-11-cdZXWvWZ\your_instagram_activity\media\posts_1.json"
+        r"data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\media\posts_1.json",
+        r"data\instagram-days010602-2025-07-11-cdZXWvWZ\your_instagram_activity\media\posts_1.json"
     ]
 
     all_posts = []

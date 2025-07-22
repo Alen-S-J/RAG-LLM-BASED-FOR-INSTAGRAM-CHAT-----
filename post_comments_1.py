@@ -25,7 +25,7 @@ def extract_post_comments(json_path: str) -> List[Dict[str, any]]:
 # Example usage with multiple paths
 if __name__ == "__main__":
     paths = [
-        r"C:\Users\alene\Music\RAG LLM BASED FOR INSTAGRAM CHAT (🛜)\data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\comments\post_comments_1.json",
+        r"data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\comments\post_comments_1.json",
         r"data\instagram-days010602-2025-07-11-cdZXWvWZ\your_instagram_activity\comments\post_comments_1.json",
         r"data\instagram-days010603-2025-07-11-5uV1CjIS\your_instagram_activity\comments\post_comments_1.json"
     ]

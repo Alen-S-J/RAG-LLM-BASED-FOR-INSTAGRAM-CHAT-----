@@ -24,9 +24,9 @@ def extract_profile_photos(json_path: str) -> List[dict]:
 
 if __name__ == "__main__":
     json_paths = [
-        r"1-data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\media\profile_photos.json",
-        r"2-data\instagram-days010602-2025-07-11-cdZXWvWZ\your_instagram_activity\media\profile_photos.json",
-        r"3-data\instagram-days010603-2025-07-11-5uV1CjIS\your_instagram_activity\media\profile_photos.json"
+        r"data\instagram-days010601-2025-07-09-GyNYqGsQ\your_instagram_activity\media\profile_photos.json",
+        r"data\instagram-days010602-2025-07-11-cdZXWvWZ\your_instagram_activity\media\profile_photos.json",
+        r"data\instagram-days010603-2025-07-11-5uV1CjIS\your_instagram_activity\media\profile_photos.json"
     ]
 
     all_photos = []

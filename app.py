@@ -1,106 +1,165 @@
+# filename: cli_app.py
+
 import os
+import pickle
+import numpy as np
 from dotenv import load_dotenv
+from typing import List, Dict
+from langchain.agents import Tool, initialize_agent
+from langchain.agents.agent_types import AgentType
+from langchain.prompts import PromptTemplate
+from langchain.schema import Document
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferMemory
-from langchain_openai import ChatOpenAI
-from langchain_community.tools import DuckDuckGoSearchResults
+import requests
+from bs4 import BeautifulSoup
 
 # Load environment variables
 load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-# === CONFIG ===
-FAISS_BASE_PATH = "storage/faiss"
-EMBEDDER = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+FAISS_DIR = "storage/faiss/videos_index"
+DOCS_FILE = "storage/faiss/videos_index/index.pkl"
 
-# LLM - GPT-3.5 Turbo
-LLM = ChatOpenAI(
-    model="gpt-3.5-turbo",
-    temperature=0.5,
-    max_tokens=512,
-    openai_api_key=os.getenv("OPENAI_API_KEY")
-)
+# DuckDuckGo Web Search
+def simple_web_search(query: str) -> str:
+    url = f"https://html.duckduckgo.com/html/?q={query.replace(' ', '+')}"
+    headers = {"User-Agent": "Mozilla/5.0"}
+    response = requests.get(url, headers=headers)
+    if not response.ok:
+        return "Web search failed."
+    soup = BeautifulSoup(response.text, "html.parser")
+    results = []
+    for result in soup.select(".result__a")[:5]:
+        title = result.get_text(strip=True)
+        href = result.get("href")
+        if href:
+            results.append(f"- {title}: {href}")
+    return "\n".join(results) if results else "No relevant results found."
 
-# DuckDuckGo search results tool (returns titles + links)
-duckduckgo_results = DuckDuckGoSearchResults()
+# Load FAISS + Docs
+def load_instagram_vectorstore():
+    if not os.path.exists(FAISS_DIR):
+        print(f"Warning: FAISS directory not found at {FAISS_DIR}. RAG will not use local Instagram data.")
+        return None, []
+    embeddings = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
+    vectorstore = FAISS.load_local(FAISS_DIR, embeddings, allow_dangerous_deserialization=True)
+    docs = []
+    if os.path.exists(DOCS_FILE):
+        with open(DOCS_FILE, "rb") as f:
+            docs = pickle.load(f)
+    return vectorstore, docs
 
-# === FUNCTIONS ===
-def get_latest_user_id():
-    """Return the most recently updated user_id from FAISS_BASE_PATH."""
-    if not os.path.exists(FAISS_BASE_PATH):
-        return None
-    
-    user_dirs = [
-        os.path.join(FAISS_BASE_PATH, d)
-        for d in os.listdir(FAISS_BASE_PATH)
-        if os.path.isdir(os.path.join(FAISS_BASE_PATH, d))
-    ]
-    
-    if not user_dirs:
-        return None
-    
-    # Sort by modification time (latest first)
-    latest_dir = max(user_dirs, key=os.path.getmtime)
-    return os.path.basename(latest_dir)
+# Cosine similarity reranker
+def cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:
+    return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
 
-def load_faiss_index(user_id):
-    """Load FAISS index for a given user."""
-    index_path = os.path.join(FAISS_BASE_PATH, user_id, "faiss_index")
-    if os.path.exists(index_path):
-        return FAISS.load_local(index_path, EMBEDDER, allow_dangerous_deserialization=True)
-    return None
+def embedding_rerank(query: str, documents: List[str], embeddings_model, top_n: int = 3):
+    query_embedding = embeddings_model.embed_query(query)
+    doc_embeddings = embeddings_model.embed_documents(documents)
+    scored = [(doc, cosine_similarity(np.array(query_embedding), np.array(doc_emb)))
+              for doc, doc_emb in zip(documents, doc_embeddings)]
+    return sorted(scored, key=lambda x: x[1], reverse=True)[:top_n]
 
-def web_search_with_links(query: str):
-    """Perform a DuckDuckGo search and return results with links."""
-    results = duckduckgo_results.run(query)
-    search_links = []
-    for r in results:
-        if isinstance(r, dict) and "link" in r:
-            search_links.append(f"{r['title']}: {r['link']}")
-    return "\n".join(search_links) if search_links else "No links found."
+# GPT-based reranker
+def gpt_rerank(query: str, documents: List[str], client, top_n: int = 3):
+    scored = []
+    for doc in documents:
+        prompt = f"""
+You are a smart reranker.
 
-def main():
-    print("CLI Chat with Auto-FAISS Selection + DuckDuckGo Search (GPT-3.5 Turbo + Links)")
+Given this user query: "{query}"
+And this document: "{doc}"
 
-    user_id = get_latest_user_id()
-    if user_id:
-        print(f"Auto-selected latest user ID: {user_id}")
+Score how relevant this document is to the query on a scale from 1 (not relevant) to 10 (very relevant). Only return a number.
+"""
+        response = client.invoke(prompt).content.strip()
+        try:
+            score = float(response)
+            scored.append((doc, score))
+        except ValueError:
+            print(f"Warning: Could not parse GPT reranker response to float: '{response}'")
+            continue
+    return sorted(scored, key=lambda x: x[1], reverse=True)[:top_n]
+
+# Main QA Function
+def get_answer_with_context(query: str, history: List[Dict[str, str]]) -> str:
+    vectorstore, docs = load_instagram_vectorstore()
+    context = ""
+
+    if vectorstore:
+        docs_with_scores = vectorstore.similarity_search_with_score(query, k=6)
+        retrieved_texts = [doc.page_content for doc, _ in docs_with_scores]
+
+        RERANK_MODE = "embedding"  # "embedding", "gpt", or "none"
+        if RERANK_MODE == "embedding":
+            embeddings_model = OpenAIEmbeddings(model="text-embedding-3-small", api_key=OPENAI_API_KEY)
+            reranked = embedding_rerank(query, retrieved_texts, embeddings_model, top_n=3)
+        elif RERANK_MODE == "gpt":
+            gpt_client = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.1, api_key=OPENAI_API_KEY)
+            reranked = gpt_rerank(query, retrieved_texts, gpt_client, top_n=3)
+        else:
+            reranked = [(doc, 0.0) for doc in retrieved_texts[:3]]
+
+        context = "\n\n".join([doc for doc, score in reranked])
     else:
-        print("No FAISS user data found. Using only web search.")
+        context = "No Instagram data available. Please ensure FAISS index is built."
 
-    faiss_db = load_faiss_index(user_id) if user_id else None
-    chat_history = []
+    web_result = simple_web_search(query)
+    chat_history = "\n".join([f"User: {h['user']}\nBot: {h['bot']}" for h in history[-3:]])
 
-    if faiss_db:
-        print(f"Loaded FAISS index for {user_id}")
-        memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
-        qa_chain = ConversationalRetrievalChain.from_llm(
-            llm=LLM,
-            retriever=faiss_db.as_retriever(),
-            memory=memory
-        )
-    else:
-        print("No FAISS index loaded. All queries will use web search.")
+    prompt_template = PromptTemplate(
+        input_variables=["chat_history", "instagram_context", "web_context", "question"],
+        template="""
+You are a helpful assistant combining Instagram personal data and live web info.
+
+Conversation History:
+{chat_history}
+
+Instagram Context:
+{instagram_context}
+
+Web Search Results:
+{web_context}
+
+Current Question: {question}
+
+Answer:"""
+    )
+
+    llm = ChatOpenAI(
+        model="gpt-3.5-turbo",
+        temperature=0.2,
+        api_key=OPENAI_API_KEY
+    )
+
+    final_prompt = prompt_template.format(
+        chat_history=chat_history,
+        instagram_context=context,
+        web_context=web_result,
+        question=query
+    )
+
+    return llm.invoke(final_prompt).content
+
+def main_cli():
+    print("Welcome to the Instagram RAG CLI!")
+    print("Type 'exit' to quit.")
+    
+    chat_history: List[Dict[str, str]] = []
 
     while True:
-        query = input("\nYou: ").strip()
-        if query.lower() in ["exit", "quit"]:
-            print("Goodbye!")
+        user_question = input("\nUser: ")
+        if user_question.lower() == 'exit':
+            print("Exiting chat. Goodbye!")
             break
-
-        if faiss_db:
-            response = qa_chain.run(query)
-            if not response.strip():  # If FAISS gives empty, fallback to search
-                print("Using DuckDuckGo for live search...")
-                links = web_search_with_links(query)
-                response = f"{LLM.predict(query)}\n\n🔗 Links:\n{links}"
-        else:
-            links = web_search_with_links(query)
-            response = f"{LLM.predict(query)}\n\n🔗 Links:\n{links}"
-
-        chat_history.append({"user": query, "bot": response})
-        print(f"Bot: {response}")
+        
+        try:
+            answer = get_answer_with_context(user_question, chat_history)
+            print(f"Bot: {answer}")
+            chat_history.append({"user": user_question, "bot": answer})
+        except Exception as e:
+            print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    main()
+    main_cli()

@@ -1,0 +1,301 @@
+COMBINED VIDEO TRANSCRIPTS
+================================================================================
+Generated: 2025-08-13 00:53:05
+Transcription method: whisper
+================================================================================
+
+
+############################################################
+DIRECTORY: data\Demo-20250808T144143Z-1-001
+############################################################
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: a few startup fundraises from last week (08-02)💳 @tryramp $500M Series E-2 at $22.5B valuation _transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\a few startup fundraises from last week (08-02)💳 @tryramp $500M Series E-2 at $22.5B valuation _transcript.txt
+--------------------------------------------------
+
+Video: a few startup fundraises from last week (08-02)💳 @tryramp $500M Series E-2 at $22.5B valuation .mp4
+Processed: 2025-08-13 00:52:00
+Method: whisper
+--------------------------------------------------
+
+Let's talk about a few of the hottest start-up rounds from last week. Ramp raised $500 million at a $22.5 billion valuation just 45 days after their last raise of $200 million at a $16 billion valuation, which that itself is up from a $13 billion valuation back in March. We all know Ramp as the corporate card and expense management platform, but it's now grown into the full financial automation suite, including AI agents to automate tedious finance tasks. Their first agent is already being used by thousands of customers, and it's able to re-company policy docs and match them against expenses to flag issues. They're also currently planning a budgeting agent that is able to proactively approve bills before they even hit the finance teams inbox. With this, Ramp's big vision is to build the AI operating system for finance and build what it calls a new phase of autonomous finance by 2028. They're now serving over 40,000 plus customers and was cashflow positive as of early this year. Nudge raised $800 million in series A to build non-invasive brain computer interfaces that used focus ultrasound to reach deep brain areas as opposed to using surgery. Their device now JZRO is already being used in human research studies and they hope to be able to treat neurological and psychiatric disorders like PTSD, Alzheimer's and chronic pain. They want to make brain health and modulation as routine as heart monitoring. For the BCI field, this is pretty exciting because the field has been dominated by companies like Neuralink which are invasive and require surgery but this non-invasive approach could potentially open the door to mass market NeuroTech. Finally Julius raised a 10 million dollar series A to build the AI-powered data analyst. Their platform allows you to ask data questions using natural language and you get back analysis, code, visuals without needing to know any SQL or R. They have over 2 million plus users and have completed over 10 million visualizations. And behind the scenes, it's generating over 4 million lines of R-sash Python code a day. This matters because most data in companies sits unused because non-technical teams aren't able to access it. But Julius wants to change that and make data insights as easy as asking the question. And that's it for this. Sweet.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: a few startup fundraises from last week (may 18) startups mentioned- @doji_com, rainmaker cloud _transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\a few startup fundraises from last week (may 18) startups mentioned- @doji_com, rainmaker cloud _transcript.txt
+--------------------------------------------------
+
+Video: a few startup fundraises from last week (may 18) startups mentioned- @doji_com, rainmaker cloud .mp4
+Processed: 2025-08-13 00:52:05
+Method: whisper
+--------------------------------------------------
+
+Let's talk about a few of the hottest start-up fundraisers from last week. Dojoe raised a $14 million seed round to allow anyone to create a high-quality, highly personalized avatar of themselves for virtual trions. Users only have to take a few selfies and full-body images to create their avatar, then they can select their favorite brands during onboarding or copy and paste any shopping link from online. Then it puts that user in that exact outfit, but also surfaces personalized clothing recommendations. The founders are X, DeepMind, Apple, and Meta, and they're hoping to redefine how people shop online and the challenge of accurately predicting fit, which is a major pain point in the virtual trion space. I believe the app is also currently invite only. Rainmaker is a climate tech startup that raised $25 million in series A funding to use drones to enhance rain. While cloud seating as a technology isn't necessarily new, they replace expensive manned aircrafts with cost-effective autonomous drones that can seed clouds at a fraction of the cost. They also use high-resolution radar and real-time weather prediction software to identify the best cloud formations for seating. This reduces wasted materials and maximizes precipitation. Some of their current clients include state agencies like Utah or Colorado's Department of Natural Resources, which are all looking for scalable ways to address drought and water scarcity. Hydra raised a $32 million series A for AI video and character creation. The startup was only founded in 2023, but this values the company at $200 million. Their omnimodal AI model has hit some virality recently with their talking baby podcast. It aims to differentiate from its competitors by offering more expressive characters, and features like style transfer, long dialogue, and precise character control. Finally, Granola raised a $43 million series B at a $250 million valuation. They initially launched as an AI-powered note-taking tool, but have since evolved into a full-fledged intelligent workspace with their launch of Granola 2.0. The platform is able to capture and organize millions of minutes of team conversations, which provide context-rich summaries that can be queried even in real-time. Granola's user base is growing rapidly, and they're seeing the 10% weekly increase in their active users, with much of this growth being largely driven by organic word of mouth. Their broader vision is to redefine work. please collaboration by moving beyond static documents to dynamic conversation-driven work spaces. And that's it for this week.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: anthropic vs openai #softwareengineer #aitools #claude #cursor #claudecode #coding #openai #chat_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\anthropic vs openai #softwareengineer #aitools #claude #cursor #claudecode #coding #openai #chat_transcript.txt
+--------------------------------------------------
+
+Video: anthropic vs openai #softwareengineer #aitools #claude #cursor #claudecode #coding #openai #chat.mp4
+Processed: 2025-08-13 00:52:09
+Method: whisper
+--------------------------------------------------
+
+Anthropics just cut off OpenAI's access to its Clawed AI models, accusing them of violating their terms of service. And this is all happening right as GPT-5 is about to drop. It's kind of a dramatic and unusually public fallout between two of the top AI players. OpenAI had essentially been using Anthropics Clawed models specifically its popular Clawed Code tool to benchmark GPT-5. In Anthropics eyes, they said that this crossed the line and that you're not allowed to use Clawed to build or improve a competing product. They saw it as OpenAI trying to reverse engineer or benchmark Clawed in a way that fuels rival development. OpenAI's defense was that this was industry standard. That cross-monopoly valuations are a routine and a really important part of responsible AI development. And they even specifically emphasized that they still allow Clawed access to its own API, implying that this is all a one-sided move by Anthropic. This matters because it's one of the most public and pointed examples of the friction in the AI arms race. We're kind of entering a phase in the AI industry where collaboration is breaking down. A lot of these companies used to share benchmarks. and even research vapors, but now the stakes are simply too high, especially with GPT-5 on the horizon. And I think what this means is that companies will use API access as leverage. In the same way, that Facebook wants restricted vine, or when Salesforce block rivals from Slack's API, we're going to start seeing API gating as more of a competitive mode. And in an industry where there aren't necessarily rules around fair benchmarking yet, there are pretty blurry lines around actual evaluation and building off of a competitor's IP. So for now, it's turning into a little bit of a free-veral. This latest tension is probably one of the clearer signs that the AI model players are no longer playing nice.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: gattaca irl 🧬👶 the designer super babies are coming. @nucleusgenomics @therealkiansadeghi @orc_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\gattaca irl 🧬👶 the designer super babies are coming. @nucleusgenomics @therealkiansadeghi @orc_transcript.txt
+--------------------------------------------------
+
+Video: gattaca irl 🧬👶 the designer super babies are coming. @nucleusgenomics @therealkiansadeghi @orc.mp4
+Processed: 2025-08-13 00:52:16
+Method: whisper
+--------------------------------------------------
+
+We're now entering the age of building the superbaby. There are two startups where pushing the next frontier of reproductive technology called nucleus and orchid, who help affluent parents rink embryos based off of risk of disease, predicted IQ, and even lifespan. These superbabies are created through IVF when embryos are tested based on their genes. In the past, doctors mostly screened for serious and rare diseases like cystic fibrosis, which are caused by a single gene. But now you have this new kind of testing called polygenic screening, which is able to look at hundreds if not thousands of genetic signals at the same time. This type of test is then able to give you a risk score for things like heart disease, diabetes, depression, and even traits like height, eye color, or intelligence. The idea here is to help parents pick an embryo of the best odds of living a healthier and longer life. IVF offers polygenic testing for over 200 conditions, priced at $2,500 per embryo, and it's already allegedly become the testing platform of choice among Silicon Valley elite. The other company, Nucleus, just launched Nucleus embryo, which lets parents upload up to 20 and... and ranks them based off of 900 plus genetic variables, including predicted lifespan and cognitive ability, all for the price of 5,999. For these companies, this is a form of preventative health at the earliest stage. Why wouldn't you give parents their best shot at raising a healthy child? If we can reduce the risk of debilitating diseases like Alzheimer's or cancer, the forebour, these companies argue that we should. They also give prospective parents more data and control over critical decisions. And for families with histories of serious conditions, it can also bring peace of mind, kind of like medicine that starts before life even begins. But of course, there's also an ethical slippery slope here. For starters, many experts are saying that the science is inconsistent and uncertain. Polygenic rescores are all probabilistic and the results can differ wildly based off the company because of different datasets, algorithms, and assumptions. Not to mention that a lot of these datasets also skew towards white European ancestry. And then there's also the clear gattica storyline here. Choosing embryos based off of perceived better traits can... reinforced assumptions about what lives are worth creating. When embryos are ranked, selected, and priced based off of things like height and IQ, it becomes more like a process of consumer optimization. Children then become much more like products rather than people. And most obviously with the current cost, access to all of this is only limited to the wealthy. If the affluent can screen for things like higher IQ, a longer life, or even fewer chronic illnesses, it's likely going to worsen health and opportunity gaps over time. So the startups argue that innovation will bring costs down. That most cutting edge health tech does start out expensive. In the same way that genome sequencing went from $100 million to $100, they believe that embryo screening will follow a similar trajectory. Right now in countries like the UK and Europe, polygenic screening is banned, but in the US, regulation is wide open, so we're quite literally living through a real time experiment. And a lot of super babies have already been born with this technology. Children who currently exist who are ranked and selected before their birth.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: Google drops 3D world creation in real time with Genie 3 #videogames #gaming #aitools #chatgpt #_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\Google drops 3D world creation in real time with Genie 3 #videogames #gaming #aitools #chatgpt #_transcript.txt
+--------------------------------------------------
+
+Video: Google drops 3D world creation in real time with Genie 3 #videogames #gaming #aitools #chatgpt #.mp4
+Processed: 2025-08-13 00:52:21
+Method: whisper
+--------------------------------------------------
+
+DeepMind just dropped Genie 3, which is an AI system that's able to build video game worlds in real-time. It's a new AI world model that can generate interactive 3D worlds with just a text prompt. And after it's outputted, users and AI agents can actually fully explore those worlds in real-time. And compared to its predecessors, Genie 3 in particular has a bunch of really key upgrades. Not only can you navigate and interact with these environments in real-time, they've also introduced visual memory so that objects stay where you love them. If you walk away from a canvas and return, the things that you painted on that canvas remain. And there are also promptable world events like adding characters or changing the weather in real-time, or even triggering events by simply typing a prompt. Another big upgrade is that worlds can stay coherent for minutes now, whereas they only last about 10 to 20 seconds in Genie 2. And what I personally think as most technically impressive is that Genie 3 is way more physics-aware. It actually understands how the world should behave, like fire flickering or water-slashing, without requiring any sort of manually coded physics engine. It also supports first-person navigation when you pair of deepbinds agents like SEMA, and you can actually simulate gold-driven behavior like walk to that door or walk to that foreclift. All of this matters because Genie 3 and other world models are actually a really important stepping stone towards AGI. If we want AGI, then we need agents that are able to operate in open-ended, unpredictable environments. And world models like Genie essentially provide virtually unlimited and dynamic training data. And in these world models, agents are going to be able to learn by doing, by planning, reacting, and adapting just like humans would. At the same time, as with most things in AGI, Genie 3 is still far from our end goal. Right now, it can only create a few minutes of consistent simulation, which is far from real-world timescale. And while you can create individual streets or parts of a city, you aren't able to generate faithful replicas of cities like Paris or Tokyo. Another big limitation is that you can only perform very few agent actions right now. Agents are able to move and observe, but they can't yet perform complex tasks or change the world on their own. Right now, Genie 3 is still only in limited research preview for academics and certain creators, but it does offer us a glimpse into what dynamic user-generated worlds could look like.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: is this what ambient AI will look like 🔮 #chatgpt #jonyive #openai #samaltman #design #designto_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\is this what ambient AI will look like 🔮 #chatgpt #jonyive #openai #samaltman #design #designto_transcript.txt
+--------------------------------------------------
+
+Video: is this what ambient AI will look like 🔮 #chatgpt #jonyive #openai #samaltman #design #designto.mp4
+Processed: 2025-08-13 00:52:24
+Method: whisper
+--------------------------------------------------
+
+We now have two pretty solid speculative mockups of what OpenAI's AI hardware might look like. The first one coming out of a Wall Street Journal report, and the second one coming from Min Chi Quo, who's an Apple analyst famous for his Apple predictions. Both are predicting that it'll be a small, screenless, wearable AI assistant, much more like an iPod shuffle than an iPhone. And here's what we know or can reasonably guess so far. All in himself has said that the device won't be a phone or glasses, especially since he's hoping that it'll help people ween off of screens. Voice then will probably be the primary mode of interaction. And as we know, Sam Altman is very open about his admiration for the movie, Herr, which is also further emphasized by the Sura-Lit Jo Hansen voice controversy. Quo in particular believes that the device will be warned comfortably around the neck, and that there won't be any sort of display, just a camera and a microphone array to detect the user's environment, and that it'll offload any processing or visuals to your phone or PC. He predicts that it'll become a third core device that's meant to sit alongside your laptop as well as your phone, but meant to blend quietly into your daily life. Regarding the actual launch timeline and manufacturing, mass production. is said to be slated for 2027 and likely in Vietnam as opposed to China due to the geopolitical risk. Their target is to have 100 million plus units shipped and all men believe that it could be the fastest selling consumer device in history. In this sense, the end game here is that you have an AI that you don't ever have to ask. You don't have to learn better ways to prompt chat Gbt. Instead, it's an ambient assistant that just knows you. It sees what you see, it hears what you hear, and proactively helps before you even have to ask.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: New research from @microsoft on which jobs are AI safe Top 10 Jobs Most at Risk from AI(Highest _transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\New research from @microsoft on which jobs are AI safe Top 10 Jobs Most at Risk from AI(Highest _transcript.txt
+--------------------------------------------------
+
+Video: New research from @microsoft on which jobs are AI safe Top 10 Jobs Most at Risk from AI(Highest .mp4
+Processed: 2025-08-13 00:52:29
+Method: whisper
+--------------------------------------------------
+
+Microsoft just dropped their research where they show the 40 occupations most exposed to AI and the 40 most insulated from AI impact. For the study, they analyzed over 200,000 real conversations between users and co-pilot and essentially tried to understand how Genai is actually being used and what that means for jobs. Based on the actual usage data, they built an AI applicability score for each occupation based on the Department of Labor's Ownet job taxonomy. But if you're interested in the actual methodology and process, I'll share a link to the paper in the comments. What they found was that the following roles were most exposed to AI impact. These were occupations like translators, interpreters, sales reps, and customer service reps. Often roles that have a lot of translating, writing, researching, or explaining. On the flip side, the 40 jobs most insulated from AI impact include ones that require manual labor or physical interaction and machine operations. These are occupations like phlebotomists, nursing assistants, dishwasher, roofers, construction workers, and these rank for lowest obviously because LLMs can't move or repair things in the physical world until we get the human. However, it's worth noting that there are some physical roles like cooking or nursing where they are seeing AI assist with knowledge tasks adjacent to the job. Things like writing emails, nutrition planning, or even building care checklists. There's generally a very wide grey zone of jobs in the middle too, like teachers, marketers, lawyers, data analysts, better or blend, where AI can help a lot, but full automation is probably unlikely for now because human judgment and creativity and communications still matter a ton. Ultimately, the common theme was that anything with information transfer was identified at most risks, because AI can now provide answers, scripts, explanations, often better and faster. It was also pretty interesting because there was a weak but positive correlation between AI applicability and education level. They found that bachelor's degree roles are more exposed than high school only jobs, but not dramatically so, especially when employment waited. Again, go check out the paper and if you're curious about where your role lands on this list, let me know and I can try to look it up and share thoughts on how it maps to the study.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: PART ONE - what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\PART ONE - what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+--------------------------------------------------
+
+Video: PART ONE - what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m.mp4
+Processed: 2025-08-13 00:52:35
+Method: whisper
+--------------------------------------------------
+
+So GPT-5 finally dropped and no we are still not at AGI. But I'm sure you've been seeing all the videos and explainers on your feet about it. Now all those do a great job covering the new features so I'm not going to go too deeply into that. Instead I want to spend a little bit more time talking about the significance of GPT-5 and how the tech ecosystem is reacting to it. First on background it's been officially two years since GPT-4's debut and OpenAi's been very intentional about holding back the GPT-5 release. They wanted it to represent a meaningful jump in capability something that was a true milestone in the road to AGI. And in the last few years they pushed out some okay stuff. They had the Orion project which a lot of people said was kind of underwhelming and then they also launched GPT-4.5 earlier this year in February and it was solid but not a big enough step change in user experience to warrant the GPT-5 name. So with this launch it sounds like OpenAi believes that they've cleared the bar. On the technical front architecturally GPT-5 isn't one model. Instead it's a system of models working together. When you ask a pretty simple query, it'll route you to a lightweight faster model, but if you ask a complex question, it'll automatically trigger deeper reasoning and use more resources. That means that hopefully it's much more cost-efficient and fast, while still being able to deliver higher quality reasoning when you need it. In terms of rollout, GPT-5 is actually going to become the default model for all chat GPT users, including the free tier. That's big because it means that millions of people who have only ever had access to lighter models like GPT-3.5 and GPT-4 are now getting their hands on a reasoning capable model. However, a change you might have noticed and one that I personally miss is that model picker is now gone. This is actually really great if you don't care or know about the differences between the different models. It is frustrating for people who like switching models for different tasks. So given all of this, what are early reactions? There are a lot of positive takes because it's simply more accurate, faster, and makes less obvious mistakes. And pricing noticeably was a big surprise. GPT-5 is going to be priced at $1.25 per million in put tokens, which is a lot cheaper than Clause Opus 4.1, which is priced at $15 per million in put tokens. However, there are still caveats. A lot of people are saying that it very much so still hallucinates, especially without deeper reasoning, and coding wise, even though you have the CEO of cursor saying that it's the best model for coding right now, other developers are saying that they still prefer Clause Opus for code heavy workflows. So all in all, is it better than GPD4? Yes, on accuracy, on hallucinations. Do I see it as a crazy milestone towards AGI? I don't know yet.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: PART TWO – what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\PART TWO – what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+--------------------------------------------------
+
+Video: PART TWO – what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m.mp4
+Processed: 2025-08-13 00:52:38
+Method: whisper
+--------------------------------------------------
+
+So all in all, is it better than GPT-4? Yes, on accuracy, on hallucinations. Do I see it as a crazy milestone towards AGI? I don't know yet. At the same time, it's worth remembering that OpenAI has an insane consumer market position here. Chattity now has 700 million weekly active users, which is up 4x in the last year. Google's Gemini trails that, but only at 450 monthly active users. And it's clear that OpenAI is coming for the enterprise too by positioning GPT-5, coding, and pitching a very strategic pricing. With the low cost, they're basically pressuring anthropic or Google to match for risk-losing developer adoption. And finally, at a super high level, one of the more interesting takeaways from Sam Altman's remarks today is that he's very much so still a firm believer in scaling laws. A lot of people argue that we're hitting a ceiling with LLMs. He believes that there are still three levers for major gains, more compute, higher quality data, and better training environments, meaning that we might see the current transformer paradigm power, GPT-6, GPT-7. all without needing any brand new architecture. Of course, he also admits that this will come with eye watering level compute investments. So to wrap, 55 is faster, it's smarter, and it's more accessible, but still not AGI. So we'll see how this all plays out.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: you’re telling me I could have superhuman vision by 2030 👁️👄👁️#neuralink #bionic #cyborg #rob_transcript.txt
+SOURCE DIRECTORY: Demo-20250808T144143Z-1-001
+FULL PATH: video_transcripts\Demo-20250808T144143Z-1-001\you’re telling me I could have superhuman vision by 2030 👁️👄👁️#neuralink #bionic #cyborg #rob_transcript.txt
+--------------------------------------------------
+
+Video: you’re telling me I could have superhuman vision by 2030 👁️👄👁️#neuralink #bionic #cyborg #rob.mp4
+Processed: 2025-08-13 00:52:41
+Method: whisper
+--------------------------------------------------
+
+Neuralink is now quietly working on a smart, bionic eye. The brain computer and face company founded by Elon Musk has quietly joined the clinical trial aimed at building it, and if successful, it could help people who are blind, recognize faces, read, navigate the world using an AI-powered brain implant. The goal of this technology is to bypass damaged eyes altogether, and instead of relying on the retina or your eye itself, the system would implant ultra thin electrode arrays directly into the brain's visual cortex, which is the part of the brain responsible for processing site. It essentially uses brain simulation to recreate the experience of site. The Spionic Eye Project also complements Neuralink's blind site device, which must claim to normally be able to restore vision, but also potentially enable superhuman site, including the ability to perceive wavelengths that are totally invisible to the human eye, like infrared, ultraviolet, or even radar signals. However, it is worth noting that blind site has only been tested in monkeys and not yet in humans, and that a lot of researchers believe that superhuman vision remains. largely speculative. With all of this, Neuralink is on a pretty aggressive timeline. They're aiming to launch human trials for blind sight by 2026 and scaled to 20,000 surgeries annually by 2031, with a projected revenue of a billion dollars a year from its implant portfolio. And if all of this works out, it would mean that Neuralink would be able to not only impact movement, but also restore sensory perception with its devices too.
+
+
+############################################################
+DIRECTORY: data\Demo2
+############################################################
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DK9qhUfSfD6_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DK9qhUfSfD6_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DK9qhUfSfD6_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:43
+Method: whisper
+--------------------------------------------------
+
+Imagine you're having a house party. What's your go to place to Kuala Sto? So I actually end up hosting house parties because I really want people to try this food. My favorite is ITC Master Chef Creations. And what I like ITC is I get to order this really nice Murk Kulcha Dabeli. Oh yes. Or the Chole Kulcha Dabeli for the vegetar rice. It's like a mix between Dabeli and Kulcha. So delicious. I've never found a single person who's not like it. It is a fancy Dabeli but it's a really good fancy Dabeli. My favorite is the Mutton Shikham Kori Kabab. Totally a bangle. Everyone should try it. And if I order one more, I would really recommend the Subs Galati Kabab. It's vegetarian but it gives any non-vegetarian starter or grandfather. That's more sharp. It's very but at least soft. Literally disintegrates in your mouth. Yeah.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DKhRKuFST2n_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DKhRKuFST2n_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DKhRKuFST2n_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:46
+Method: whisper
+--------------------------------------------------
+
+3 bars in Bombay that are an absolute must visit. I think my first trick would be America look. Everything about the place, the vibe, the crowd, the way you stand, the way you sit, the cocktails, the food, all of it adds up to giving you a very European vibe. You go for the cocktails, but to stay for the theta machine. My recommendation would be Pandra Bond. If you're visiting Bombay for the culture and the food, this is a must visit. They brought traditional dishes of Mumbai to life and the cocktails are smashing. And once again, you go for the cocktails and you stay for the caribbean guns. Oh yes, it's one of the best caribbean guns I've had. There are so many cases in Mumbai that it's hard to pick one, but the one that I would recommend is paradox. The vibe of it is almost like a speakeasy in terms of its headache. It's a bar where you go in a small group like when a couple of friends or like on a date or like with just one or two people and you stay there either until the storage in your cool runs out or the money that you're paying for the cocktails runs out. So
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DKuKFVhSSyX_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DKuKFVhSSyX_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DKuKFVhSSyX_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:52
+Method: whisper
+--------------------------------------------------
+
+Give me your favorite burger in Bangalore. I will go with the Swiss cheese from Beyond Burgh. Perfectly grilled smashed patty, cheese, caramelized onions, and really soft buns. My current favorite is Okla Homa, smashed burger from Gorilla Diner. It's a smashed patty with very simple ingredients. The Adamlite Loneans, American cheese, some pickles and togg. I'm hungry already. My next favorite is a bit offbeat, which is the Wellington from Smash Guys. It's an old 2D Wellington in the UK. It has a super crisp patty, a very intense meat flavor, mushroom and mustard sauce. It's not a burger I understand, but it's a pastrami sandwich from Beyond Burgh. It literally melts in your mouth. Yeah. Again, very simple ingredients, mustard, pickles. I usually end up not just having a sandwich, but just the meat coming out of here. You can just, yeah, the pastrami has crossed cured so well.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DL2LxsBysJp_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DL2LxsBysJp_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DL2LxsBysJp_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:54
+Method: whisper
+--------------------------------------------------
+
+How do men show their care without ever saying it? When we notice you're not okay, we just say, let's go out and eat. Food is the answer to most of the things. We never say I miss you, but we'll randomly text, hey, you alive. Yeah, very nonchalant. We would make fun of you in front of people, but defend you the moment someone else tries to do. We would never ask, how are you? But instead ask, you're good. We will mock your gym form, but we'll spot you like a pro. Because we want you to build that body. We would never let you text your ex after two drinks. Oh yeah, for sure. We will send you memes without saying hi. Yeah, that's our eye.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DL7Yzg_Sc4C_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DL7Yzg_Sc4C_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DL7Yzg_Sc4C_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:55
+Method: whisper
+--------------------------------------------------
+
+What are some signs of emotional maturity? When someone is trying to open up to you, you recognize that you can be egoistic, but you know how to calm it down. Yeah, that's true. You know that someone's past could be traumatic for them, so you don't weaponize it in their face. Mmm, that's a big one. You don't punish their vulnerability. You may be listening to understand and not necessarily to respond. That's how you make someone comfortable being vulnerable with you. You don't take everything personally because not everything is about you. Yeah, that's true.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DLCw_xfoXKP_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DLCw_xfoXKP_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DLCw_xfoXKP_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:57
+Method: whisper
+--------------------------------------------------
+
+What is the number one thing to look for in a partner? I think values just is one thing. I know that why not ambition, passion, even looks. You know, when you are with someone for a considerable amount of time, a lot of things about them change every few years. They put on a little weight, their ambition changes, their interests change, they build new passions. So when you are with someone, you essentially are going to fall in love with someone new or them all over again. But if you look for values, I think that's one thing that keeps you away anchored. And you know that even if anything else changes, this is what you seek and this is what you came into this relationship for. And I also believe that in this world of external validation, it's very hard to be just attracted by someone's value.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DLhoRJvSL6y_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DLhoRJvSL6y_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DLhoRJvSL6y_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:52:59
+Method: whisper
+--------------------------------------------------
+
+What are some relationship nice behaviors that are actually red flags? Someone who always agrees with you and does not express what they actually want. Constantly giving gifts or doing grand gestures to impress you. Someone being very over-protective of you about everything in your life. Be it career, be it friends, who you're hanging out with. Most of your decisions. Somebody who gives you a sense that you complete me. Which might initially sound very passionate, but it's actually like a warning sign. Someone who always prioritizes you over anything else. That could be a really good thing, but sometimes it also means I am completely overseeing what my needs are. And that gradually brews into something that becomes claustrophrobic. And there is some level of frustration because I never expressed what I really wanted. Like, talking from a life to another. What are you doing?
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DLKnJTmo7xo_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DLKnJTmo7xo_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DLKnJTmo7xo_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:53:01
+Method: whisper
+--------------------------------------------------
+
+Things you should never say on a dating app after 30. Looking for vibes. What vibe are you looking for? Is it love? Is it trauma bonding? Is it a rebound after your last break up? Another one is... Hey you up dude, look at the time. It's 10 a.m. in the morning. I am up and I'm done with this chat also. I'm not looking for anything serious. This is a dating app. If you're not looking for anything serious, go start a podcast. Wait a minute. Just here for fun. That includes emotional safety. Deep sleep, running in the morning and 100 different things. See you got to specify. Let's see where this goes. We're not here on a track. Either you'll be intentional or be invisible. Someone who says, if you can't handle me at my worst, maybe you're not looking to date. You're looking for someone who will sign up for your disaster insurance.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DLmyBlmykRc_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DLmyBlmykRc_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DLmyBlmykRc_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:53:03
+Method: whisper
+--------------------------------------------------
+
+What are some signs that show that you're not lonely? You're just tired of shallow conversations. I was so many. I'm personally tired of questions like, Hey, how's work? Long time. Let's catch up soon. I would rather have them ask me, Are you doing okay? Are you surviving? Just functioning or your beak actually has... Like, what's good? Yeah. What have you been looking for? Yeah. Also, not having a hundred people around, but maybe just two or three who really get you. You've been to enough parties. You've had many shallow conversations. Now, you don't want to have conversations that will leave you empty or then before. What are the signs that also your craving presence not necessarily proximity? Presence of someone, of a friend or just anybody. And you need somebody who listens to you and not just replies. I think it's not loneliness. It's the emotional hundred. And most people are talking with some sort of a filter on it. just never a human connection that they belong here.
+
+
+--------------------------------------------------
+TRANSCRIPT FILE: https_www.instagram.com_reel_DLUwI2VoI6I_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+SOURCE DIRECTORY: Demo2
+FULL PATH: video_transcripts\Demo2\https_www.instagram.com_reel_DLUwI2VoI6I_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+--------------------------------------------------
+
+Video: https_www.instagram.com_reel_DLUwI2VoI6I_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==.mp4
+Processed: 2025-08-13 00:53:05
+Method: whisper
+--------------------------------------------------
+
+What are some fitness and wellness habits that you would want to see in your partner in their 30s? The fact that they prioritize sleep, it's only your 30s probably that you realize that sleep is not a luxury, it is the foundation, it's like a necessity. They like to walk a lot to the grocery store, at the airport, when you're traveling, they walk a lot. They say no to plans that disrupt their fitness and wellness routines, whether that is cutting back on alcohol, whether that is not going out socially to the extent that you just lose track of what the next is going to look like. They're chasing overall well-being and not just aesthetics, because in your 30s you've got to take care of your whole body and your mental health. That includes strength, that includes agility, that includes movement, everything.
+
+
+================================================================================
+SUMMARY: Combined 20 transcript files
+Generated: 2025-08-13 00:53:05
+================================================================================

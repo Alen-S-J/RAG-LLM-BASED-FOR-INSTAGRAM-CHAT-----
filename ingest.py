@@ -9,7 +9,7 @@ import whisper
 from crewai.tools import tool
 from pydantic import BaseModel
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from post_comments_1 import extract_post_comments
 from personal_information import extract_personal_information
@@ -23,10 +23,9 @@ load_dotenv()
 
 # Paths for multiple users
 BASE_DIRS = [
-    Path("data/instagram-days010601-2025-07-09-GyNYqGsQ"),
-    Path("data/instagram-days010602-2025-07-11-cdZXWvWZ"),
-    Path("data/instagram-days010603-2025-07-11-5uV1CjIS"),
-    Path("data/Demo-20250808T144143Z-1-001")
+    
+    Path("data/Demo-20250808T144143Z-1-001"),
+    Path("data/Demo2")
 ]
 
 # File types
@@ -34,7 +33,7 @@ AUDIO_EXTENSIONS = [".mp3", ".wav", ".m4a", ".mp4", ".aac"]
 IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".bmp", ".gif"]
 
 # Offline embedding model
-embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+embedding_model = OpenAIEmbeddings(model_name="text-embedding-3-small")
 
 
 class IndexBuildResult(BaseModel):

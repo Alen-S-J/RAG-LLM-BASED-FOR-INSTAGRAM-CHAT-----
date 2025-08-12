@@ -369,6 +369,73 @@ class VideoTranscriptExtractor:
         except Exception as e:
             logger.warning(f"Could not clean up temp files: {e}")
     
+    def create_combined_transcript_file(self):
+        """Create one master .txt file containing all individual transcripts"""
+        combined_path = self.output_dir / "ALL_TRANSCRIPTS_COMBINED.txt"
+        
+        logger.info("Creating combined transcript file...")
+        
+        with open(combined_path, 'w', encoding='utf-8') as combined_file:
+            # Write header
+            combined_file.write("COMBINED VIDEO TRANSCRIPTS\n")
+            combined_file.write("=" * 80 + "\n")
+            combined_file.write(f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            combined_file.write(f"Transcription method: {self.preferred_method}\n")
+            combined_file.write("=" * 80 + "\n\n")
+            
+            total_transcripts = 0
+            
+            # Process each base directory
+            for base_dir in self.base_dirs:
+                dir_name = base_dir.name
+                output_subdir = self.output_dir / dir_name
+                
+                if not output_subdir.exists():
+                    continue
+                
+                # Write directory header
+                combined_file.write(f"\n{'#' * 60}\n")
+                combined_file.write(f"DIRECTORY: {base_dir}\n")
+                combined_file.write(f"{'#' * 60}\n\n")
+                
+                # Get all transcript files in this directory
+                txt_files = sorted(output_subdir.glob("*_transcript.txt"))
+                
+                for txt_file in txt_files:
+                    try:
+                        # Read the transcript file
+                        with open(txt_file, 'r', encoding='utf-8') as f:
+                            content = f.read().strip()
+                        
+                        if content:
+                            # Write separator and file info
+                            combined_file.write(f"\n{'-' * 50}\n")
+                            combined_file.write(f"TRANSCRIPT FILE: {txt_file.name}\n")
+                            combined_file.write(f"SOURCE DIRECTORY: {dir_name}\n")
+                            combined_file.write(f"FULL PATH: {txt_file}\n")
+                            combined_file.write(f"{'-' * 50}\n\n")
+                            
+                            # Write the actual transcript content
+                            combined_file.write(content)
+                            combined_file.write("\n\n")
+                            
+                            total_transcripts += 1
+                            logger.debug(f"Added to combined file: {txt_file.name}")
+                    
+                    except Exception as e:
+                        logger.error(f"Error reading {txt_file}: {e}")
+                        combined_file.write(f"\n[ERROR: Could not read {txt_file.name}: {e}]\n\n")
+            
+            # Write footer
+            combined_file.write(f"\n{'=' * 80}\n")
+            combined_file.write(f"SUMMARY: Combined {total_transcripts} transcript files\n")
+            combined_file.write(f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+            combined_file.write(f"{'=' * 80}\n")
+        
+        logger.info(f"Combined transcript file created: {combined_path}")
+        logger.info(f"Total transcripts combined: {total_transcripts}")
+        return combined_path, total_transcripts
+    
     def create_summary_report(self):
         """Create a summary report of processed files"""
         summary_path = self.output_dir / "transcription_summary.txt"
@@ -422,6 +489,12 @@ def main():
         
         # Process all directories
         total_files = extractor.process_all_directories()
+        
+        # Create combined transcript file
+        if total_files > 0:
+            combined_path, combined_count = extractor.create_combined_transcript_file()
+            print(f"Combined transcript created: {combined_path}")
+            print(f"Total transcripts combined: {combined_count}")
         
         # Create summary report
         extractor.create_summary_report()

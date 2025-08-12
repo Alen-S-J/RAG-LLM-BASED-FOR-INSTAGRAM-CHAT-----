@@ -18,8 +18,8 @@ from bs4 import BeautifulSoup
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-FAISS_DIR = "storage/faiss/videos_index"
-DOCS_FILE = "storage/faiss/videos_index/index.pkl"
+FAISS_DIR = "faiss_db"
+DOCS_FILE = "faiss_db/index.pkl"
 
 # DuckDuckGo Web Search
 def simple_web_search(query: str) -> str:

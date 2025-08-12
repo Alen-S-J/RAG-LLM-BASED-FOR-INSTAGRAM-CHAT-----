@@ -1,0 +1,34 @@
+Video Transcription Summary
+==================================================
+
+Transcription method used: whisper
+Whisper available: True
+
+Directory: data\Demo-20250808T144143Z-1-001
+Output: video_transcripts\Demo-20250808T144143Z-1-001
+Transcripts generated: 10
+  - a few startup fundraises from last week (08-02)💳 @tryramp $500M Series E-2 at $22.5B valuation _transcript.txt
+  - a few startup fundraises from last week (may 18) startups mentioned- @doji_com, rainmaker cloud _transcript.txt
+  - anthropic vs openai #softwareengineer #aitools #claude #cursor #claudecode #coding #openai #chat_transcript.txt
+  - gattaca irl 🧬👶 the designer super babies are coming. @nucleusgenomics @therealkiansadeghi @orc_transcript.txt
+  - Google drops 3D world creation in real time with Genie 3 #videogames #gaming #aitools #chatgpt #_transcript.txt
+  - is this what ambient AI will look like 🔮 #chatgpt #jonyive #openai #samaltman #design #designto_transcript.txt
+  - New research from @microsoft on which jobs are AI safe Top 10 Jobs Most at Risk from AI(Highest _transcript.txt
+  - PART ONE - what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+  - PART TWO – what GPT-5 signals and how the tech ecosystem is reacting 🧠#gpt5 #chatgpt #openai #m_transcript.txt
+  - you’re telling me I could have superhuman vision by 2030 👁️👄👁️#neuralink #bionic #cyborg #rob_transcript.txt
+
+Directory: data\Demo2
+Output: video_transcripts\Demo2
+Transcripts generated: 10
+  - https_www.instagram.com_reel_DK9qhUfSfD6_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DKhRKuFST2n_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DKuKFVhSSyX_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DL2LxsBysJp_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DL7Yzg_Sc4C_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DLCw_xfoXKP_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DLhoRJvSL6y_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DLKnJTmo7xo_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DLmyBlmykRc_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+  - https_www.instagram.com_reel_DLUwI2VoI6I_utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==_transcript.txt
+

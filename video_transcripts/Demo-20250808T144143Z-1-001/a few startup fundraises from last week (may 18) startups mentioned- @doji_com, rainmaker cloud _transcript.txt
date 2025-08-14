@@ -1,5 +1,5 @@
 Video: a few startup fundraises from last week (may 18) startups mentioned- @doji_com, rainmaker cloud .mp4
-Processed: 2025-08-13 00:52:05
+Processed: 2025-08-13 21:13:48
 Method: whisper
 --------------------------------------------------
 

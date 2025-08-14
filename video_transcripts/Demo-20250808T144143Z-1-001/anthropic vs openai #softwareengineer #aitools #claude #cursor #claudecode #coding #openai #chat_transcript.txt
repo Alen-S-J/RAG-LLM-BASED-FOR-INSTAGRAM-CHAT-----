@@ -1,5 +1,5 @@
 Video: anthropic vs openai #softwareengineer #aitools #claude #cursor #claudecode #coding #openai #chat.mp4
-Processed: 2025-08-13 00:52:09
+Processed: 2025-08-13 21:13:52
 Method: whisper
 --------------------------------------------------
 

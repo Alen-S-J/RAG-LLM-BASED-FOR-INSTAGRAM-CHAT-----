@@ -1,5 +1,5 @@
 Video: New research from @microsoft on which jobs are AI safe Top 10 Jobs Most at Risk from AI(Highest .mp4
-Processed: 2025-08-13 00:52:29
+Processed: 2025-08-13 21:14:11
 Method: whisper
 --------------------------------------------------
 

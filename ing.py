@@ -6,14 +6,16 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 import os
-
+import pickle
 from dotenv import load_dotenv
+
 load_dotenv()
 
-# Constants
-FAISS_DB_PATH = "faiss_db"
-VIDEO_BASE_DIR = Path("data")  # All video dirs inside here will be processed
-TRANSCRIPT_BASE_DIR = Path("video_transcripts")  # Where transcripts are stored
+# Constants – match app.py
+FAISS_DB_PATH = Path("storage/faiss/faiss_index")
+DOCS_FILE_PATH = Path("storage/faiss/docs.pkl")
+VIDEO_BASE_DIR = Path("data")
+TRANSCRIPT_BASE_DIR = Path("video_transcripts")
 
 def get_video_directories():
     """Find all subdirectories in VIDEO_BASE_DIR."""
@@ -31,15 +33,9 @@ def build_faiss_index():
 
     for path in transcript_paths:
         if path.is_dir():
-            txt_files = [
-                f for f in path.rglob("*.txt")
-                if "transcription_summary.txt" not in f.name
-            ]
+            txt_files = [f for f in path.rglob("*.txt") if "transcription_summary.txt" not in f.name]
         elif path.is_file() and path.suffix.lower() == ".txt":
-            if "transcription_summary.txt" not in path.name:
-                txt_files = [path]
-            else:
-                txt_files = []
+            txt_files = [path] if "transcription_summary.txt" not in path.name else []
         else:
             txt_files = []
 
@@ -60,6 +56,7 @@ def build_faiss_index():
                         page_content=chunk,
                         metadata={
                             "source": str(txt_file),
+                            "url": None,  # Placeholder if you want to add a video URL later
                             "chunk": i
                         }
                     ))
@@ -76,8 +73,16 @@ def build_faiss_index():
     print("📦 Creating FAISS index...")
     vectorstore = FAISS.from_documents(docs, embeddings)
 
+    # Ensure directory exists
+    FAISS_DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+
     print(f"💾 Saving FAISS index to: {FAISS_DB_PATH}")
-    vectorstore.save_local(FAISS_DB_PATH)
+    vectorstore.save_local(str(FAISS_DB_PATH))
+
+    print(f"💾 Saving docs metadata to: {DOCS_FILE_PATH}")
+    with open(DOCS_FILE_PATH, "wb") as f:
+        pickle.dump(docs, f)
+
     print("✅ FAISS indexing complete.")
 
 def main():
